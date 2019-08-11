@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/ic_spaceback"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SettingsActivity">
+    <!--<NumberPicker-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+    <!--</NumberPicker>-->
+
+    <ListView
+            android:elevation="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/shape"
+            android:divider="@color/colorWhite"
+            android:clickable="true"
+            android:entries="@array/Colors"
+            android:id="@+id/main_listview"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/row_main"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>
+

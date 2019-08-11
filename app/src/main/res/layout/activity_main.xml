@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/ic_spaceback"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.MainActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logotype"
+                android:padding="100dp"
+                android:id="@+id/imageView"
+                android:contentDescription="TODO"/>
+    </LinearLayout>
+    <Button
+            android:text="Get Started"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mainActv"
+            android:id="@+id/btn_start"/>
+    <Button
+            android:text="Create Players"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mainActv"
+            android:id="@+id/btn_player"/>
+    <Button
+            android:text="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mainActv"
+            android:id="@+id/btn_settings"/>
+
+    <Button
+            android:text="Game Rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mainActv"
+            android:id="@+id/btn_credits"/>
+</LinearLayout>

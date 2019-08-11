@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/ic_spaceback"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.GameActivity">
+    <RelativeLayout
+            android:id="@+id/GameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_arter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+    />
+
+    <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_arifut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_below="@id/imageView1"
+    />
+    <TextView
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_marginBottom="90dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#fdf48d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tV1" android:layout_above="@+id/imageView2"
+    />
+        <RatingBar
+                android:scaleX="-1"
+                android:stepSize="1"
+                android:id="@+id/rating_bar"
+                android:numStars="2"
+                android:rating="0"
+                android:theme="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/imageView1"
+                android:layout_alignBottom="@id/imageView1"
+                android:isIndicator="true"
+        />
+
+    <TextView
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="180sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#fdf48d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tV2"
+            android:layout_alignBottom="@+id/imageView2"/>
+
+    <RelativeLayout
+            android:layout_below="@id/tV2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical">
+
+        <TextView
+                android:text=""
+                android:id="@+id/time_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:textSize="50sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:text="Start"
+                style="@style/Myfab"
+                android:src="@drawable/ic_playbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/starter"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:text="show"
+                style="@style/Myfab"
+                android:src="@drawable/ic_viewbutton"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showLet"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:text="stop"
+                style="@style/Myfab"
+                android:src="@drawable/ic_pausebutton"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stop_btn"/>
+
+
+        <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="Name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name_view"/>
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"/>
+            <Button
+                    android:text="PLUS"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content" android:id="@+id/plus_btn"/>
+            <Button
+                    android:text="2plus"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/plus2_btn"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+<!---->
+    <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ResultsLayout">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                    android:text="Place"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView3"/>
+            <TextView
+                    android:text="Name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView4"/>
+            <TextView
+                    android:text="Score"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView5"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mainRecyclerView"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/result_layout">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+<!---->
+
+</RelativeLayout>

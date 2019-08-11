@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+    <!--<EditText-->
+    <!--android:id="@+id/editText"-->
+    <!--android:visibility="gone"-->
+    <!--android:backgroundTint="@android:color/white"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Enter the text here" />-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/list_id"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:background="@color/transparent"
+                android:id="@+id/name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Name"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                android:background="@color/transparent"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/position_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"/>
+    </LinearLayout>
+</LinearLayout>

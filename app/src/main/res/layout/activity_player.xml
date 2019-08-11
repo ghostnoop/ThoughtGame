@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/ic_spaceback"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.PlayerActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="@style/Myfab"
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_check_black_24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="@style/Myfab"
+            android:id="@+id/fab_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_clear_black_24dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/linearLayout">
+        <SeekBar
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/colorWhite"
+                android:max="10"
+                android:min="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="50dp"
+                android:id="@+id/seekBar"/>
+        <TextView
+                android:text="Players : 1"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"/>
+        <EditText
+                android:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorWhite"
+                android:hint="Player name"
+                android:ems="10"
+                android:id="@+id/name_text"/>
+        <Button
+                android:text="add player"
+                android:textColor="@color/colorWhite"
+                android:background="@color/transparent"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/add_player"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

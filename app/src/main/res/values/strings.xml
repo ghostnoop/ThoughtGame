@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">thoughtgame</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string-array name="Colors">
+        <item name="color">Gray</item>
+        <item name="color">Cyan Blue</item>
+        <item name="color">Magenta</item>
+    </string-array>
+    <string-array name="time_array">
+        <item name="time">10 sec</item>
+        <item name="time">20 sec</item>
+        <item name="time">30 sec</item>
+        <item name="time">40 sec</item>
+        <item name="time">50 sec</item>
+        <item name="time">60 sec</item>
+    </string-array>
+
+    <string-array name="lang_array">
+        <item name="time">Rus</item>
+        <item name="time">Eng</item>
+    </string-array>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>
